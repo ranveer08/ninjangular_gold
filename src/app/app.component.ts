@@ -26,6 +26,10 @@ export class AppComponent {
       "log": `Earned ${money} gold from the farm. (${this.date.getFullYear()}/${this.date.getMonth()}/${this.date.getDate()} ${this.date.getHours()}:${this.date.getMinutes()} ${amPm})`
     });
   }
+  reset(){
+    this.gold = 0;
+    this.activity_log = [];
+  }
 
   cave() {
     let money = Math.round(Math.random()* 5)+5
@@ -81,4 +85,5 @@ export class AppComponent {
       });
     }
   }
+
 }

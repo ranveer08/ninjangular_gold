@@ -29,6 +29,6 @@
      <div class="information">
         <p *ngFor="let activity of activity_log" class="{{ activity.color }}">{{ activity.log }}</p>
      </div>
-        <input type="submit" value="Reset" class="reset">
+        <input type="submit" value="Reset" class="reset" (click)="reset()" >
   </div>
 </div>
